@@ -6,7 +6,7 @@ public class forEach
         for (int num : numbers)
         {
             int dim = numbers.length; // la classe array ha un metodo che descrive la quantità totale degli elementi
-            System.out.println("numero "+ num+" di "+dim+ " elementi");
+            System.out.println("numero "+ num+" di "+dim+ " elementi"); // concateno gli elementi con la lunghezza
         }
     }
 }
