@@ -10,6 +10,7 @@ public class calcolaPerimetroArea
         Scanner input = new Scanner(System.in);
         System.out.print("Inserisci il tuo nome: ");
         String nome;
+        int soglia = 20;
         nome = input.nextLine();
         System.out.print("Inserisci la lunghezza del lato: ");
         int lato;
@@ -18,10 +19,10 @@ public class calcolaPerimetroArea
         int perimetro;
         area = lato*lato;
         perimetro = lato*4;
-        if (lato>40 || lato<1)
+        if (lato>soglia || lato<1)
         {
             // inserisco ina condizione aggiuntiva
-            if (lato>40)
+            if (lato>soglia)
             {
             System.out.println(nome + " Hai inserito un numero grande"); 
             }
