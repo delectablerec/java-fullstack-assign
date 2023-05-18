@@ -16,6 +16,7 @@ public class PrintList
         for (String fruit : fruits)
         {
             System.out.println(fruit);
+            // fruits.remove(fruit);
             // System.out.println(fruits.size());
             // System.out.println(fruits.isEmpty());
         }
