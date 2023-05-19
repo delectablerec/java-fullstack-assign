@@ -31,5 +31,6 @@ public class PrintList
             // System.out.println(fruits.size());
             // System.out.println(fruits.isEmpty());
         }
+        input.close();
     }
 }
