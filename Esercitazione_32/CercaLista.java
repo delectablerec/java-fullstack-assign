@@ -9,9 +9,9 @@ public static void main(String[] args)
         Scanner input = new Scanner(System.in);
 
         List<String> lista = new ArrayList<String>();
-        System.out.println("Inserisci gli elementi della lista (inserisci \"fine\" per terminare l'inserimento):");
+        System.out.println("Inserisci gli elementi della lista (inserisci \"fine\" per terminare l'inserimento):"); // ho utilizzato il carattere di escape \ per inerire degli altri apici
         String elemento = input.nextLine();
-        while (!elemento.equals("fine"))
+        while (!elemento.equals("fine")) // finchè l'elemento è diverso da "fine"
         {
             lista.add(elemento);
             elemento = input.nextLine();
