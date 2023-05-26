@@ -2,9 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SassoCartaForbiciLizardSpok {
-    public static void main(String[] args) {
+    public static void main(String[] args)  throws InterruptedException {
         String[] options = {"sasso", "carta", "forbici", "lucertola", "spok" };
 
+        for (String option : options) {
+            printAnimated(option);
+        }
         System.out.println("sasso batte forbici\tsasso schhiaccia lucertola\ncarta batte sasso\tcarta taglia spok\nforbici decapitano lucertola\tforbici batte carta\nlucertola mangia carta\tlucertola AVVELENA SPOK\nSPOK rompe forbici\tspok vaporizza sasso");
 
         // sasso carta forbici lizard  spok
@@ -50,5 +53,12 @@ public class SassoCartaForbiciLizardSpok {
         }
 
         scanner.close();
+    }
+    private static void printAnimated(String action) throws InterruptedException {
+        for (char c : action.toCharArray()) {
+            System.out.print(c);
+            Thread.sleep(200); // Ritardo di 200 millisecondi tra ogni carattere
+        }
+        System.out.println(); // Stampa una nuova riga alla fine di ogni azione
     }
 }
