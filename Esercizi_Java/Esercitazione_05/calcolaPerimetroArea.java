@@ -21,9 +21,14 @@ public class calcolaPerimetroArea {
         // devo utilizzare la variabile lato per effettuare 2 calcoli:
 
         // se l'input dell'utente è maggiore di 400 o minore di 1 stampa: "il numero è troppo grosso" e non calcola
-        if (lato>400 || lato<1)
+        // il metodo alternativo per creare una condizione if
+        // condizione ? valore_1 : valore_2
+        // if (lato>400 || lato<1)
+        // boolean b = true:
+        // int k = b ? k = 1 : k = 2;
+        if (lato>400)
         {
-       System.out.println("il numero non è valido");
+    System.out.println("il numero non è valido");
 
         }
         else {        // se invece è minore o uguale effettua il calcolo
