@@ -12,8 +12,13 @@ body {
 }
 
 .menu a {
-    color: #fff;
+    color: #d1d1d1;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ffffff;
 }
 
 .container {
@@ -47,6 +52,11 @@ body {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
