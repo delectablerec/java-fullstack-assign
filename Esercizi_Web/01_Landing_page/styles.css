@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .menu {
     background-color: #333;
@@ -14,9 +14,10 @@ body {
 .menu a {
     color: #d1d1d1;
     text-decoration: none;
+    /* aggiunto */
     transition: color 0.3s ease-in-out;
 }
-
+ /* aggiunto */
 .menu a:hover {
     color: #ffffff;
 }
@@ -52,9 +53,10 @@ body {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+     /* aggiunto */
     transition: transform 0.3s ease-in-out;
 }
-
+ /* aggiunto */
 .card:hover {
     transform: scale(1.05);
 }
