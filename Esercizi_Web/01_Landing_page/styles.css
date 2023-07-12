@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 70vh;
     color: #222222;
-    background: linear-gradient(to right, #ffffff, #d9d3ce);
+    background: linear-gradient(to right, #ffffff, #f5f2f0);
     text-align: center;
     flex-direction: column;
 }
