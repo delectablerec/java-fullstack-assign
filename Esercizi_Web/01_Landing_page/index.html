@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="hero">
@@ -26,24 +27,24 @@
             <h2>Le mie competenze</h2>
             <div class="skill">
                 <p>HTML</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;">
+                <div class="progress" data-value="90%">
+                    <div class="progress-bar">
                         <span>90%</span>
                     </div>
                 </div>
             </div>
             <div class="skill">
                 <p>CSS</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 85%;">
+                <div class="progress" data-value="85%">
+                    <div class="progress-bar">
                         <span>85%</span>
                     </div>
                 </div>
             </div>
             <div class="skill">
                 <p>JavaScript</p>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">
+                <div class="progress" data-value="80%">
+                    <div class="progress-bar">
                         <span>80%</span>
                     </div>
                 </div>
@@ -132,5 +133,14 @@
             </form>
         </div>
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.querySelectorAll('.progress').forEach((item) => {
+                let value = item.getAttribute('data-value');
+                let bar = item.querySelector('.progress-bar');
+                bar.style.width = value;
+            });
+        });
+    </script>
 </body>
 </html>
