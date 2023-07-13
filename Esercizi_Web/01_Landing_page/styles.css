@@ -69,6 +69,7 @@ body {
 }
 
 .progress-bar {
+    width: 0; /* valore di partenza */
     height: 20px;
     background-color: #4caf50;
     border-radius: 5px;
@@ -80,7 +81,7 @@ body {
     font-weight: bold;
     position: relative;
     overflow: hidden;
-    transition: width 1s ease-in-out;
+    transition: width 2s; /* durata dell'animazione */
 }
 
 .progress-bar span {

@@ -1042,9 +1042,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('.progress').forEach((item) => {
         let value = item.getAttribute('data-value');
         let bar = item.querySelector('.progress-bar');
-        bar.style.width = value;
+        setTimeout(function() {
+            bar.style.width = value;
+        }, 500); /* ritardo dell'animazione */
     });
 });
+
 ```
 In questo esempio, ho aggiunto un attributo data-value a ciascun div "progress" nel file HTML per memorizzare il valore di competenza. Nel file CSS, ho impostato la proprietà transition del div "progress-bar" per creare un'animazione quando la larghezza viene modificata.
 
