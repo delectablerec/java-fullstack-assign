@@ -56,6 +56,22 @@ body {
     margin: 20px;
 }
 
+.skill {
+    margin: 20px 0;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 600px) {
     .section {
         grid-template-columns: 1fr 1fr;
@@ -84,6 +100,11 @@ body {
 .card img {
     width: 100%;
     height: auto;
+}
+
+.card i {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 #contact {
